@@ -1,16 +1,29 @@
 doctype html
 html
   head
-    title Julz Store
+    title the shop
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js')
+    script(type='text/javascript' src='/lib/foundation-5.5.2/js/vendor/jquery.js')
+    script(type='text/javascript' src='/lib/foundation-5.5.2/js/foundation/foundation.js')
+    script(type='text/javascript' src='/lib/foundation-5.5.2/js/foundation/foundation.dropdown.js')
+    script(type='text/javascript' src='/lib/foundation-5.5.2/js/foundation/foundation.topbar.js')
     script(type='text/javascript' src='/js/index.js')
-    link(rel='stylesheet' href='/css/foundation.css')
+    link(rel='stylesheet' href='/lib/foundation-5.5.2/css/normalize.css')
+    link(rel='stylesheet' href='/lib/foundation-5.5.2/css/foundation.css')
     link(rel='stylesheet' href='/css/stylesheet.css')
-
   body
-    .row
-      #main
-        #header
-          h1 The Shop
+    #header.row
+      nav.top-bar
+        ul.title-area
+          li.name
+            a(href='/')#sitetitle
+              h1 the shop
+          li.divider
+        section.top-bar-section
+          ul.right
+            li
+              a(href = '/products') { products }
+            li
+              a(href= '/orders') { orders }
       #container
         block content

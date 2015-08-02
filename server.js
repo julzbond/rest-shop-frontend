@@ -17,13 +17,13 @@ app.get('/', function(req, res){
   res.render('shop');
 });
 
-// app.get('/products', function(req, res){
-//   res.render('products');
-// });
+app.get('/products', function(req, res){
+  res.render('products');
+});
 
-// app.get('/orders', function(req, res){
-//   res.render('orders');
-// });
+app.get('/orders', function(req, res){
+  res.render('orders');
+});
 
 app.listen(CONFIG.port, function(){
   console.log("Server is running");

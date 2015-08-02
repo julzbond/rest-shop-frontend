@@ -1,4 +1,22 @@
 extends _layout
 
 block content
-  .orders
+  .row
+    .order-find.large-8.medium-6.small-12.columns
+      h3 view an order
+      br
+      form(id='order-find' action='/orders' method='GET')
+        .row
+          .large-12.columns
+            .row.collapse
+              .small-10.columns
+                input(type='text' name='order-id' id='order-id' placeholder='enter order id number')
+              .small-2.columns
+                button(type='submit' name='submit' id='submit' class='postfix') find
+      .order-results
+
+    .order-search-history.large-4.medium-6.show-for-medium-up.columns
+      h3 search history
+      .search-box
+        ul.order-search-log
+

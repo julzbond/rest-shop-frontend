@@ -1,4 +1,15 @@
 extends _layout
 
 block content
-  .products
+
+  .row
+    .product-find.large-8.medium-6.small-12.columns
+      h3 browse products
+      a(href="#" data-dropdown="product_id" aria-controls="drop1" aria-expanded="false" class="button dropdown") select one
+      ul(id="product_id" data-dropdown-content tabindex="-1" class="f-dropdown" aria-hidden="true" aria-autoclose="true")
+      a(href="#" id="all-products") view all
+      .product-results
+
+    .product-search-history.large-4.medium-6.show-for-medium-up.columns
+      h3 search history
+      ul.product-search-log

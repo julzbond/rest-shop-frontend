@@ -1,9 +1,64 @@
-#main {
+#header {
   margin-top: 5em;
 }
 #container{
   margin-top:3em;
+  margin-bottom: 3em;
+  text-transform: lowercase;
 }
+
+h3 {
+  font-size: 1.0875em;
+  font-weight: bold;
+}
+
+.top-bar, .top-bar-section ul li, .top-bar-section li:not(.has-form) a:not(.button), .top-bar-section li:not(.has-form) a:not(.button):hover {
+  background: white;
+  color: black;
+}
+
+.top-bar-section li:not(.has-form) a:not(.button):hover {
+  color: #008CBA;
+}
+
+.top-bar .name h1 {
+  font-size:2.0625rem;
+  font-weight: bold;
+}
+
+#product_id{
+  padding: .5em;
+}
+
 .product-results, .order-results{
   margin-top: 2em;
+}
+
+.product-data {
+  margin-bottom: 2em;
+}
+
+.product-name {
+  font-weight: bold;
+}
+
+.order-id, .submit {
+  float: left;
+}
+
+/*.search-box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+}*/
+
+button, .button{
+  padding: .75rem 1.25rem .75rem 1.25rem
+}
+
+.dropdown.button, button.dropdown {
+    position: relative;
+    padding-right: 7.5625rem;
+    margin-right: 2em;
 }

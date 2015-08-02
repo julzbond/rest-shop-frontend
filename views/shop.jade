@@ -2,28 +2,5 @@ extends _layout
 
 block content
   .row
-    .product-find.large-6.medium-6.small-12.columns
-      form(id='product-find' action='/products' method='GET')
-        h3 Enter a Product ID
-        input(type='text' name='product_id' id='product_id')
-        br
-        button(type='submit' name='submit' id='submit') Find
-
-    .order-find.large-6.medium-6.small-12.columns
-      form(id='order-find' action='/orders' method='GET')
-        h3 Enter a Order ID
-        input(type='text' name='order_id' id='order_id')
-        br
-        button(type='submit' name='submit' id='submit') Find
-  .row
-    .product-results.large-6.medium-6.small-12.columns
-    .order-results.large-6.medium-6.small-12.columns
-
-
-  //- .orderfind
-  //-   form(id='orderFind' action='/orders' method='GET')
-  //-     p Find a Order
-  //-     input(type='text' name='order')
-  //-     br
-  //-     p
-  //-     button(type='submit' name='submit') Find
+    .content.large-12.medium-12.small-12.columns
+      p welcome to the shop.
